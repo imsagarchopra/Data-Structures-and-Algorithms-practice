@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 struct Array
 {
@@ -286,8 +287,59 @@ void RightRotation(struct Array* arr)
     arr->A[0] = rotationVar;
 
 }
+
+void InsertInSortedArray(struct Array* arr, int n)
+{
+    int i = arr->length - 1;
+
+    if (arr->length == arr->size)
+        return;
+
+    while (arr->A[i] > n)
+    {
+        arr->A[i + 1] = arr->A[i];
+        i--;
+    }
+    arr->A[i + 1] = n;
+    arr->length++;
+
+}
+
+bool IsSorted(struct Array arr)
+{
+    int i;   
+
+    for (i = 0; i < arr.length-1; i++)
+    {
+        if (arr.A[i] > arr.A[i + 1])
+            return false;
+    }
+    return true;
+}
+
+void MoveNegativesOnLeftSide(struct Array* arr)
+{
+    int i, j;
+    i = 0;
+    j = arr->length - 1;
+
+    while (i < j)
+    {
+        while (arr->A[i] < 0)
+            i++;
+        while (arr->A[j] >= 0)
+            j--;
+
+        if (i < j)
+        {
+            Swap(&arr->A[i], &arr->A[j]);
+        }
+    } 
+}
+
 int main() {
-    struct Array arr = { {2,3,4,5,6},20,5 };
+    struct Array arr = { {2,3,4,5,6},10,5 };
+    //struct Array arr = { {2,-3,25,10,-15,-7},10,5 };
     Display(arr);
     printf("\n");
     //Append(&arr,7);
@@ -310,7 +362,10 @@ int main() {
     //LeftShift(&arr);
     //LeftRotation(&arr);
     //RightShift(&arr);
-    RightRotation(&arr);
+    //RightRotation(&arr);
+    //InsertInSortedArray(&arr,3);
+    //printf("%d\n", IsSorted(arr));
+    MoveNegativesOnLeftSide(&arr);  
     printf("\n");
     Display(arr);
     return 0;
