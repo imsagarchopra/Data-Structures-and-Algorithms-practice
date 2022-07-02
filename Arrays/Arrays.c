@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 struct Array
 {
@@ -215,6 +216,76 @@ int Avg(struct Array arr)
     return Sum(arr) / arr.length;
 }
 
+void Reverse(struct Array* arr)
+{
+    int* B;
+    int i, j;
+
+    B = (int*)malloc(arr->length * sizeof(int));
+    for (i = arr->length - 1, j = 0; i >= 0; i--, j++)
+        B[j] = arr->A[i];
+    for (i = 0; i < arr->length; i++)
+        arr->A[i] = B[i];
+
+}
+
+void ReverseUsingSwap(struct Array* arr)
+{
+    int i, j;
+    for (i = 0, j = arr->length - 1; i < j; i++, j--)
+    {
+        Swap(&arr->A[i], &arr->A[j]);
+    }
+}
+
+void LeftShift(struct Array* arr)
+{
+    int i;
+    for (i = 0; i < arr->length-1; i++)
+    {
+        arr->A[i] = arr->A[i + 1];
+    }
+    arr->A[arr->length - 1] = 0;
+}
+
+void LeftRotation(struct Array* arr)
+{
+    int i, rotationVar;
+    
+    rotationVar = arr->A[0];
+
+    for (i = 0; i < arr->length - 1; i++)
+    {
+        
+        arr->A[i] = arr->A[i + 1];
+    }
+
+    arr->A[arr->length - 1] = rotationVar;
+}
+
+void RightShift(struct Array* arr)
+{
+    int i;
+    for (i = arr->length-1; i > 0; i--)
+    {
+        arr->A[i] = arr->A[i - 1];
+    }
+    arr->A[0] = 0;
+}
+
+void RightRotation(struct Array* arr)
+{
+    int i, rotationVar;
+
+    rotationVar = arr->A[arr->length-1];
+
+    for (i = arr->length - 1; i > 0; i--)
+    {
+        arr->A[i] = arr->A[i - 1];
+    }
+    arr->A[0] = rotationVar;
+
+}
 int main() {
     struct Array arr = { {2,3,4,5,6},20,5 };
     Display(arr);
@@ -234,6 +305,12 @@ int main() {
     //printf("%d\n", Sum(arr));
     //printf("%d\n", RecursiveSum(arr,4));
     //printf("%d\n", Avg(arr));
+    //Reverse(&arr);
+    //ReverseUsingSwap(&arr);
+    //LeftShift(&arr);
+    //LeftRotation(&arr);
+    //RightShift(&arr);
+    RightRotation(&arr);
     printf("\n");
     Display(arr);
     return 0;
