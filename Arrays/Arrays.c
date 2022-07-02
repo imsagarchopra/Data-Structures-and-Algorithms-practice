@@ -144,6 +144,77 @@ int RecursiveBinarySearch(struct Array arr, int l,int h, int n)
     return -1;
 }
 
+int Get(struct Array arr, int index)
+{
+    if (index >= 0 && index < arr.length)
+    {
+        return arr.A[index];
+    }
+    return -1;
+}
+
+void Set(struct Array *arr, int index, int n)
+{
+    if (index >= 0 && index < arr->length)
+    {
+        arr->A[index] = n;
+    }  
+}
+
+int Max(struct Array arr)
+{
+    int max = arr.A[0];
+
+    for (int i = 1; i < arr.length; i++)
+    {
+        if (arr.A[i] > max)
+        {
+            max = arr.A[i];
+        }
+    }
+    return max;
+}
+
+int Min(struct Array arr)
+{
+    int min = arr.A[0];
+
+    for (int i = 1; i < arr.length; i++)
+    {
+        if (arr.A[i] < min)
+        {
+            min = arr.A[i];
+        }
+    }
+    return min;
+}
+
+int Sum(struct Array arr)
+{
+    int sum = 0;
+
+    for (int i = 0; i < arr.length; i++)
+    {
+        sum += arr.A[i];
+    }   
+    return sum;
+}
+
+int RecursiveSum(struct Array arr, int n)
+{
+    if (n < 0)
+        return 0;
+    else
+    {
+        return RecursiveSum(arr, n - 1) + arr.A[n];
+    }
+}
+
+int Avg(struct Array arr)
+{
+    return Sum(arr) / arr.length;
+}
+
 int main() {
     struct Array arr = { {2,3,4,5,6},20,5 };
     Display(arr);
@@ -155,7 +226,14 @@ int main() {
     //printf("%d\n", LinearSearchUsingTransposition(&arr, 6));
     //printf("%d\n", LinearSearchUsingMoveToFront(&arr, 6));
     //printf("%d\n", BinarySearch(arr, 1));
-    printf("%d\n", RecursiveBinarySearch(arr, 0, arr.length - 1, 7));
+    //printf("%d\n", RecursiveBinarySearch(arr, 0, arr.length - 1, 7));
+    //printf("%d\n", Get(arr, 2));
+    //Set(&arr, 2, 7);
+    //printf("%d\n", Max(arr));
+    //printf("%d\n", Min(arr));
+    //printf("%d\n", Sum(arr));
+    //printf("%d\n", RecursiveSum(arr,4));
+    //printf("%d\n", Avg(arr));
     printf("\n");
     Display(arr);
     return 0;
