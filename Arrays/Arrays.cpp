@@ -59,18 +59,18 @@ T Array<T>::Delete(int index)
 	}
 	return x;
 }
-int main()
-{
-	Array<char> arr(10);
-
-	arr.Insert(0, 'a');
-	arr.Insert(1, 'c');
-	arr.Insert(2, 'd');
-	arr.Display();
-	cout << arr.Delete(0) << endl;
-	arr.Display();
-	return 0;
-}
+//int main()
+//{
+//	Array<char> arr(10);
+//
+//	arr.Insert(0, 'a');
+//	arr.Insert(1, 'c');
+//	arr.Insert(2, 'd');
+//	arr.Display();
+//	cout << arr.Delete(0) << endl;
+//	arr.Display();
+//	return 0;
+//}
 
 
 //#include <stdio.h>
