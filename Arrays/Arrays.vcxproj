@@ -131,10 +131,12 @@
     <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="FindDuplicateArrayElement.cpp" />
     <ClCompile Include="FindMissingArrayElement.cpp" />
+    <ClCompile Include="FindPairWithSumK.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FindDuplicateArrayElement.h" />
     <ClInclude Include="FindMissingArrayElement.h" />
+    <ClInclude Include="FindPairWithSumK.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
