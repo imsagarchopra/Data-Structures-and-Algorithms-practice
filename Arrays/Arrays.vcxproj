@@ -130,11 +130,13 @@
     <ClCompile Include="Arrays.c" />
     <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="FindDuplicateArrayElement.cpp" />
+    <ClCompile Include="FindMaxMinInSingleScan.cpp" />
     <ClCompile Include="FindMissingArrayElement.cpp" />
     <ClCompile Include="FindPairWithSumK.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FindDuplicateArrayElement.h" />
+    <ClInclude Include="FindMaxMinInSingleScan.h" />
     <ClInclude Include="FindMissingArrayElement.h" />
     <ClInclude Include="FindPairWithSumK.h" />
   </ItemGroup>

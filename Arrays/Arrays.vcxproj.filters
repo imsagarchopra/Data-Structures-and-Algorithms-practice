@@ -30,6 +30,9 @@
     <ClCompile Include="FindPairWithSumK.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FindMaxMinInSingleScan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FindMissingArrayElement.h">
@@ -39,6 +42,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FindPairWithSumK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FindMaxMinInSingleScan.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
