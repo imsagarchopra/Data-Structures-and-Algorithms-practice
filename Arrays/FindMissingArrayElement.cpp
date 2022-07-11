@@ -138,7 +138,7 @@ void Array<T>::FindMultipleMissingElementsFromUnSortedArray()
 	l = Min();
 	h = Max();
 	
-	Array<int> H(h);
+	Array<int> H(h+1);
 	for (int i = 0; i < H.length; i++)
 	{
 		H.A[i] = 0;
@@ -160,41 +160,41 @@ void Array<T>::FindMultipleMissingElementsFromUnSortedArray()
 
 }
 
-int main()
-{
-	Array<int> arr1(10);
-	Array<int> arr2(10);
-	
-	arr1.Insert(0, 1);
-	arr1.Insert(1, 2);
-	arr1.Insert(2, 3);
-	arr1.Insert(3, 4);
-	arr1.Insert(4, 5);
-	arr1.Insert(5, 7);
-	arr1.Insert(6, 8);
-	arr1.Insert(7, 9);
-	arr1.Insert(8, 10);
-	arr1.Insert(9, 11);
-	arr1.Insert(10, 12);
-
-	arr2.Insert(0, 6);
-	arr2.Insert(1, 7);
-	arr2.Insert(2, 8);
-	arr2.Insert(3, 9);
-	arr2.Insert(4, 11);
-	arr2.Insert(5, 12);
-	arr2.Insert(6, 15);
-	arr2.Insert(7, 16);
-	arr2.Insert(8, 17);
-	arr2.Insert(9, 18);
-	arr2.Insert(10, 19);
-
-	//arr1.Display();
-	//arr1.FindSingleMissingElementFromSortedArray();
-	//arr2.FindMultipleMissingElementsFromSortedArray();
-	arr2.FindMultipleMissingElementsFromUnSortedArray();
-    
-	
-	return 0;
-}
+//int main()
+//{
+//	Array<int> arr1(10);
+//	Array<int> arr2(10);
+//	
+//	arr1.Insert(0, 1);
+//	arr1.Insert(1, 2);
+//	arr1.Insert(2, 3);
+//	arr1.Insert(3, 4);
+//	arr1.Insert(4, 5);
+//	arr1.Insert(5, 7);
+//	arr1.Insert(6, 8);
+//	arr1.Insert(7, 9);
+//	arr1.Insert(8, 10);
+//	arr1.Insert(9, 11);
+//	arr1.Insert(10, 12);
+//
+//	arr2.Insert(0, 6);
+//	arr2.Insert(1, 7);
+//	arr2.Insert(2, 8);
+//	arr2.Insert(3, 9);
+//	arr2.Insert(4, 11);
+//	arr2.Insert(5, 12);
+//	arr2.Insert(6, 15);
+//	arr2.Insert(7, 16);
+//	arr2.Insert(8, 17);
+//	arr2.Insert(9, 18);
+//	arr2.Insert(10, 19);
+//
+//	//arr1.Display();
+//	//arr1.FindSingleMissingElementFromSortedArray();
+//	//arr2.FindMultipleMissingElementsFromSortedArray();
+//	arr2.FindMultipleMissingElementsFromUnSortedArray();
+//    
+//	
+//	return 0;
+//}
 

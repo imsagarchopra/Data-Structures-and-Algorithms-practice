@@ -24,9 +24,15 @@
     <ClCompile Include="FindMissingArrayElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FindDuplicateArrayElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FindMissingArrayElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FindDuplicateArrayElement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

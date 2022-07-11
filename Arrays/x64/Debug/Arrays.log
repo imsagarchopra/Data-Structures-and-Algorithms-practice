@@ -1,3 +1,2 @@
-﻿  FindMissingArrayElement.cpp
-x64\Debug\Arrays.obj : warning LNK4042: object specified more than once; extras ignored
+﻿  FindDuplicateArrayElement.cpp
   Arrays.vcxproj -> C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\x64\Debug\Arrays.exe
