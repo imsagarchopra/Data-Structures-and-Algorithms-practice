@@ -21,9 +21,27 @@
     <ClCompile Include="LengthOfString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ToggleStringCase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CountWordsInAString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ValidateString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LengthOfString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToggleStringCase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CountWordsInAString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ValidateString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
