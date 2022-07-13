@@ -1,2 +1,3 @@
-﻿  ValidateString.cpp
+﻿  Palindrome.cpp
+C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Strings\Palindrome.cpp(49,12): warning C4101: 'temp': unreferenced local variable
   Strings.vcxproj -> C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\x64\Debug\Strings.exe

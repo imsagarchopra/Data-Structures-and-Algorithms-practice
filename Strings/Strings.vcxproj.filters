@@ -30,6 +30,9 @@
     <ClCompile Include="ValidateString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Palindrome.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LengthOfString.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ValidateString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Palindrome.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

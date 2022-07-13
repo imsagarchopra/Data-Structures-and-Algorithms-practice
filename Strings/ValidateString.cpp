@@ -16,16 +16,16 @@ int Validate(char s[])
 	return 1;	
 }
 
-int main()
-{
-	//char s[] = "Ani?321";
-	char s[] = "Anil321";
-	if (Validate(s))
-	{
-		std::cout << "Valid";
-	}
-	else
-	{
-		std::cout << "Invalid";
-	}
-}
+//int main()
+//{
+//	//char s[] = "Ani?321";
+//	char s[] = "Anil321";
+//	if (Validate(s))
+//	{
+//		std::cout << "Valid";
+//	}
+//	else
+//	{
+//		std::cout << "Invalid";
+//	}
+//}
