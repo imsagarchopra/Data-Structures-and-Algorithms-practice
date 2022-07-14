@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CountWordsInAString.cpp" />
+    <ClCompile Include="DuplicatesInAString.cpp" />
     <ClCompile Include="LengthOfString.cpp" />
     <ClCompile Include="Palindrome.cpp" />
     <ClCompile Include="Strings.cpp" />
@@ -136,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CountWordsInAString.h" />
+    <ClInclude Include="DuplicatesInAString.h" />
     <ClInclude Include="LengthOfString.h" />
     <ClInclude Include="Palindrome.h" />
     <ClInclude Include="ToggleStringCase.h" />

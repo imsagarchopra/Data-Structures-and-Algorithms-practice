@@ -69,22 +69,22 @@ void Palindrome(char s[])
 	}
 }
 
-int main()
-{
-	char s[] = "SAGAR";
-	char s1[] = "PAINTER";
-	char s2[] = "PAINTING";
-	char s3[] = "MADAM";
-	//Reverse(s);
-	//ReverseUsingSwap(s);
-	/*if (Compare(s1, s2))
-	{
-		std::cout << "Equal" << std::endl;
-	}
-	else
-	{
-		std::cout << "Not Equal" << std::endl;
-	}*/
-
-	Palindrome(s3);
-}
+//int main()
+//{
+//	char s[] = "SAGAR";
+//	char s1[] = "PAINTER";
+//	char s2[] = "PAINTING";
+//	char s3[] = "MADAM";
+//	//Reverse(s);
+//	//ReverseUsingSwap(s);
+//	/*if (Compare(s1, s2))
+//	{
+//		std::cout << "Equal" << std::endl;
+//	}
+//	else
+//	{
+//		std::cout << "Not Equal" << std::endl;
+//	}*/
+//
+//	Palindrome(s3);
+//}
