@@ -79,10 +79,10 @@ void FindDuplicateElementsInAStringUsingBitwiseOperations(char s[])
 	}
 }
 
-int main()
-{
-	char s[] = "finding";
-	//FindDuplicateElementsInAString(s);
-	//FindDuplicateElementsInAStringUsingHashing(s);
-	FindDuplicateElementsInAStringUsingBitwiseOperations(s);
-}
+//int main()
+//{
+//	char s[] = "finding";
+//	//FindDuplicateElementsInAString(s);
+//	//FindDuplicateElementsInAStringUsingHashing(s);
+//	FindDuplicateElementsInAStringUsingBitwiseOperations(s);
+//}

@@ -1,2 +1,3 @@
-﻿  DuplicatesInAString.cpp
-  Strings.vcxproj -> C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\x64\Debug\Strings.exe
+﻿  Anagram.cpp
+C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Strings\Anagram.cpp(64,21): warning C4554: '<<': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Strings\Anagram.cpp(73,15): error C2109: subscript requires array or pointer type

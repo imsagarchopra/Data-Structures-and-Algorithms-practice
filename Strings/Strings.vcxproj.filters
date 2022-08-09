@@ -36,6 +36,9 @@
     <ClCompile Include="DuplicatesInAString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Anagram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LengthOfString.h">

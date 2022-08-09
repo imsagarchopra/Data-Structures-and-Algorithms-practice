@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Anagram.cpp" />
     <ClCompile Include="CountWordsInAString.cpp" />
     <ClCompile Include="DuplicatesInAString.cpp" />
     <ClCompile Include="LengthOfString.cpp" />
