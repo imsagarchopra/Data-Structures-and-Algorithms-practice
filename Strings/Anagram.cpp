@@ -56,44 +56,44 @@ void FindAnagramUsingHashing(char a[], char b[])
 
 void FindAnagramUsingBitwiseOperations(char a[], char b[])
 {
-	int i;
-	int x = 0;
-	for (i = 0; a[i] != '\0'; i++)//assigning word6 character as per bit
-	{
-		int b = 1;//assigning 0 bit as 1 i.e turning is on
-		b = b << a[i] - 97;//turning on the bit for that particular char
-		if (x & b)
-			continue;
-		else
-			x = x | b;
-	}
-	for (i = 0; a[i] != '\0'; i++)
-	{
-		int b = 1;//assigning 0 bit as 1 i.e turning is on
-		b = b << b[i] - 97;//turning on the bit for that particular char
-		if (x & b)
-			continue;
-		else
-		{
-			std::cout << "Its not a anagram" << std::endl;
-			break;
-		}
-	}
-	if (b[i] == '\0')
-		std::cout << "Its an anagram";
-	return;
+	//int i;
+	//int x = 0;
+	//for (i = 0; a[i] != '\0'; i++)//assigning word6 character as per bit
+	//{
+	//	int b = 1;//assigning 0 bit as 1 i.e turning is on
+	//	b = b << a[i] - 97;//turning on the bit for that particular char
+	//	if (x & b)
+	//		continue;
+	//	else
+	//		x = x | b;
+	//}
+	//for (i = 0; a[i] != '\0'; i++)
+	//{
+	//	int b = 1;//assigning 0 bit as 1 i.e turning is on
+	//	b = b << b[i] - 97;//turning on the bit for that particular char
+	//	if (x & b)
+	//		continue;
+	//	else
+	//	{
+	//		std::cout << "Its not a anagram" << std::endl;
+	//		break;
+	//	}
+	//}
+	//if (b[i] == '\0')
+	//	std::cout << "Its an anagram";
+	//return;
 }
 
-int main()
-{
-	//char a[] = "decimal";
-	//char b[] = "medical";
-	char a[] = "verbose";
-	char b[] = "observe";
-	//char a[] = "elbow";
-	//char b[] = "below";
-	
-	//FindAnagram(a, b);
-	//FindAnagramUsingHashing(a, b);
-	FindAnagramUsingBitwiseOperations(a, b);
-}
+//int main()
+//{
+//	//char a[] = "decimal";
+//	//char b[] = "medical";
+//	char a[] = "verbose";
+//	char b[] = "observe";
+//	//char a[] = "elbow";
+//	//char b[] = "below";
+//	
+//	//FindAnagram(a, b);
+//	//FindAnagramUsingHashing(a, b);
+//	FindAnagramUsingBitwiseOperations(a, b);
+//}

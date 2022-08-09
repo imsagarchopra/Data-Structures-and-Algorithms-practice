@@ -132,6 +132,7 @@
     <ClCompile Include="DuplicatesInAString.cpp" />
     <ClCompile Include="LengthOfString.cpp" />
     <ClCompile Include="Palindrome.cpp" />
+    <ClCompile Include="Permutation.cpp" />
     <ClCompile Include="Strings.cpp" />
     <ClCompile Include="ToggleStringCase.cpp" />
     <ClCompile Include="ValidateString.cpp" />
