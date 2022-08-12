@@ -1,3 +1,6 @@
 ﻿  SymmetricMatrix.cpp
 C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Matrix\SymmetricMatrix.cpp(76,15): warning C4101: 'x': unreferenced local variable
+  TriDiagonalMatrix.cpp
+C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Matrix\TriDiagonalMatrix.cpp(100,15): warning C4101: 'x': unreferenced local variable
+  Generating Code...
   Matrix.vcxproj -> C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\x64\Debug\Matrix.exe
