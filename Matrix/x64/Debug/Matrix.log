@@ -1,3 +1,6 @@
-﻿  LowerTriangularMatrix_RowMajor.cpp
+﻿  LowerTriangularMatrix_ColumnMajor.cpp
+C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Matrix\LowerTriangularMatrix_ColumnMajor.cpp(76,15): warning C4101: 'x': unreferenced local variable
+  LowerTriangularMatrix_RowMajor.cpp
 C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Matrix\LowerTriangularMatrix_RowMajor.cpp(76,15): warning C4101: 'x': unreferenced local variable
+  Generating Code...
   Matrix.vcxproj -> C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\x64\Debug\Matrix.exe
