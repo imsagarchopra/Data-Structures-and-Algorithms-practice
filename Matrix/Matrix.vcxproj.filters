@@ -24,5 +24,8 @@
     <ClCompile Include="LowerTriangularMatrix_ColumnMajor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UpperTriangularMatrix_RowMajor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

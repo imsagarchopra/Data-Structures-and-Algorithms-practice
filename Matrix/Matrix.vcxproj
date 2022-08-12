@@ -130,6 +130,7 @@
     <ClCompile Include="DiagonalMatrix.cpp" />
     <ClCompile Include="LowerTriangularMatrix_ColumnMajor.cpp" />
     <ClCompile Include="LowerTriangularMatrix_RowMajor.cpp" />
+    <ClCompile Include="UpperTriangularMatrix_RowMajor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
