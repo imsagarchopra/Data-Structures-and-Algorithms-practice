@@ -55,10 +55,11 @@ void FindPermutationsUsingSwapping(char s[], int l, int h)
 
 int main()
 {
-	char s[] = "ABC";
+	//char s[] = "ABC";
 	//char s[] = "SAGAR";
+	char s[] = "SUKRITI";
 	
-	//FindPermutations(s, 0);
-	FindPermutationsUsingSwapping(s,0,2);
+	FindPermutations(s, 0);
+	//FindPermutationsUsingSwapping(s,0,2);
 	
 }
