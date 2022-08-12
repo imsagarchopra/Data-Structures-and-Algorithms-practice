@@ -131,6 +131,7 @@
     <ClCompile Include="LowerTriangularMatrix_ColumnMajor.cpp" />
     <ClCompile Include="LowerTriangularMatrix_RowMajor.cpp" />
     <ClCompile Include="SymmetricMatrix.cpp" />
+    <ClCompile Include="ToeplitzMatrix.cpp" />
     <ClCompile Include="TriDiagonalMatrix.cpp" />
     <ClCompile Include="UpperTriangularMatrix_ColumnMajor.cpp" />
     <ClCompile Include="UpperTriangularMatrix_RowMajor.cpp" />

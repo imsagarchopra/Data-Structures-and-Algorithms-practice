@@ -123,19 +123,19 @@ void TriDiagonal::Display()
     }
 }
 
-int main()
-{
-    int n;
-    std::cout << "Enter Dimensions\n";
-    std::cin >> n;
-
-    TriDiagonal matrix(n);
-
-    std::cout << "Enter items\n";
-
-    matrix.Create();
-
-    std::cout << std::endl;
-
-    matrix.Display();
-}
+//int main()
+//{
+//    int n;
+//    std::cout << "Enter Dimensions\n";
+//    std::cin >> n;
+//
+//    TriDiagonal matrix(n);
+//
+//    std::cout << "Enter items\n";
+//
+//    matrix.Create();
+//
+//    std::cout << std::endl;
+//
+//    matrix.Display();
+//}
