@@ -98,17 +98,17 @@ public:
 };
 
 
-int main()
-{   
-    Sparse s1(5,5,5);
-    s1.Read();
-    cout << endl;
-
-    Sparse s2(5, 5, 5);
-    s2.Read();
-    cout << endl;
-    Sparse sum = s1.Add(s2);
-
-    cout << endl;
-    sum.Display();
-}
+//int main()
+//{   
+//    Sparse s1(5,5,5);
+//    s1.Read();
+//    cout << endl;
+//
+//    Sparse s2(5, 5, 5);
+//    s2.Read();
+//    cout << endl;
+//    Sparse sum = s1.Add(s2);
+//
+//    cout << endl;
+//    sum.Display();
+//}
