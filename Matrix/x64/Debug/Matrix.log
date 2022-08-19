@@ -1,6 +1,2 @@
-﻿  ToeplitzMatrix.cpp
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Matrix\ToeplitzMatrix.cpp(84,15): warning C4101: 'x': unreferenced local variable
-  TriDiagonalMatrix.cpp
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Matrix\TriDiagonalMatrix.cpp(100,15): warning C4101: 'x': unreferenced local variable
-  Generating Code...
+﻿  SparseMatrix.cpp
   Matrix.vcxproj -> C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\x64\Debug\Matrix.exe
