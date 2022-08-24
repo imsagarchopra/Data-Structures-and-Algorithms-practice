@@ -33,6 +33,8 @@ public:
 	Node* RecursiveSearch(Node* t, int key);
 	Node* Search_MoveToHead(int key);
 	void Insert(int index, int x);
+	void InsertLast(int x);
+	void SortedInsert(int x);
 };
 
 LinkedList::LinkedList(int A[], int n)
@@ -252,6 +254,60 @@ void LinkedList::Insert(int index, int x)
 	}
 }
 
+void LinkedList::InsertLast(int x)
+{
+	Node* last = first;
+	Node* t = new Node;
+
+	t->data = x;
+
+	if (first == NULL)
+	{
+
+		first = last = t;
+	}
+	else
+	{
+
+		last->next = t;
+		last = t;
+	}
+}
+
+void LinkedList::SortedInsert(int x)
+{
+	Node* p = first;
+	Node* q = NULL;
+	Node* t = new Node;
+
+	t->data = x;
+	t->next = NULL;
+
+	if (first == NULL)
+	{
+		first = t;
+	}
+	else
+	{
+		while (p && p->data < x)
+		{
+			q = p;
+			p = p->next;
+		}
+
+		if (p == first)
+		{
+			t->next = first;
+			first = t;
+		}
+		else
+		{
+			t->next = q->next;
+			q->next = t;
+		}
+	}
+}
+
 int main()
 {
 	int A[]{ 3,5,7,10,15 };
@@ -293,6 +349,9 @@ int main()
 		cout << "Key Not Found"<<endl;
 	}*/
 
-	list.Insert(0, 4);
+	//list.Insert(0, 4);
+	//list.InsertLast(10);
+
+	list.SortedInsert(9);
 	list.Display();
 }
