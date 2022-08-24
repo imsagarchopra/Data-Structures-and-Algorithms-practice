@@ -32,6 +32,7 @@ public:
 	Node* Search(int key);
 	Node* RecursiveSearch(Node* t, int key);
 	Node* Search_MoveToHead(int key);
+	void Insert(int index, int x);
 };
 
 LinkedList::LinkedList(int A[], int n)
@@ -224,6 +225,33 @@ Node* LinkedList::Search_MoveToHead(int key)
 	return NULL;
 }
 
+void LinkedList::Insert(int index, int x)
+{
+	if (index < 0 || index > Count())
+		return;
+
+	Node* p = first;
+	Node* t = new Node;
+
+	t->data = x;
+
+	if (index == 0)
+	{
+		t->next = first;
+		first = t;
+	}
+	else
+	{
+		for (int i = 0; i < index - 1; i++)
+		{
+			p = p->next;
+		}
+
+		t->next = p->next;
+		p->next = t;
+	}
+}
+
 int main()
 {
 	int A[]{ 3,5,7,10,15 };
@@ -256,14 +284,15 @@ int main()
 	//	cout << "Key Not Found";
 	//}
 
-	if (list.Search_MoveToHead(7))
+	/*if (list.Search_MoveToHead(7))
 	{
 		cout << "Key Found"<<endl;
 	}
 	else
 	{
 		cout << "Key Not Found"<<endl;
-	}
+	}*/
 
+	list.Insert(0, 4);
 	list.Display();
 }
