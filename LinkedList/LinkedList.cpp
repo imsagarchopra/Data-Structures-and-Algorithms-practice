@@ -35,6 +35,7 @@ public:
 	void Insert(int index, int x);
 	void InsertLast(int x);
 	void SortedInsert(int x);
+	int Delete(int index);
 };
 
 LinkedList::LinkedList(int A[], int n)
@@ -308,6 +309,42 @@ void LinkedList::SortedInsert(int x)
 	}
 }
 
+int LinkedList::Delete(int index)
+{
+	Node* p = first;
+	Node* q = NULL;
+	int x = -1;
+
+	if (index < 1 || index > Count())
+	{
+		return -1;
+	}
+	
+	if (index == 1)
+	{
+		q = first;
+		x = first->data;
+		first = first->next;
+
+		delete q;
+		return x;
+	}
+	else
+	{
+		for (int i = 0; i < index - 1; i++)
+		{
+			q = p;
+			p = p->next;
+		}
+
+		q->next = p->next;
+		x = p->data;
+
+		delete p;
+		return x;
+	}
+}
+
 int main()
 {
 	int A[]{ 3,5,7,10,15 };
@@ -352,6 +389,7 @@ int main()
 	//list.Insert(0, 4);
 	//list.InsertLast(10);
 
-	list.SortedInsert(9);
+	//list.SortedInsert(9);
+	list.Delete(3);
 	list.Display();
 }
