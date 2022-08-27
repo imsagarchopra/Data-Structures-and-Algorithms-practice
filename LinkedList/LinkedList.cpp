@@ -37,6 +37,7 @@ public:
 	void SortedInsert(int x);
 	int Delete(int index);
 	int IsSorted();
+	void RemoveDuplicate();
 };
 
 LinkedList::LinkedList(int A[], int n)
@@ -362,11 +363,33 @@ int LinkedList::IsSorted()
 	return 1;
 }
 
+void LinkedList::RemoveDuplicate()
+{
+	Node* p = first;
+	Node* q = first->next;
+
+	while (q != NULL)
+	{
+		if (p->data != q->data)
+		{
+			p = q;
+			q = q->next;
+		}
+		else
+		{
+			p->next = q->next;
+			delete q;
+			q = p->next;
+		}
+	}
+}
+
 int main()
 {
-	int A[]{ 3,5,7,10,15,9 };
+	//int A[]{ 3,5,7,10,15,9 };
+	int A[]{ 10,20,20,30,30,30,40,50 };
 	
-	LinkedList list(A,6);
+	LinkedList list(A,8);
 	//list.Display();
 	//list.RecursiveDisplay(list.first);
 	//cout << list.Count();
@@ -409,13 +432,16 @@ int main()
 	//list.SortedInsert(9);
 	//list.Delete(3);
 
-	if (list.IsSorted())
+	/*if (list.IsSorted())
 	{
 		cout << "Sorted";
 	}
 	else
 	{
 		cout << "Not Sorted";
-	}
+	}*/
+
+	list.RemoveDuplicate();
+	list.Display();
 	
 }
