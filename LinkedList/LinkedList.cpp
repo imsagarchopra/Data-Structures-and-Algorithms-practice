@@ -14,14 +14,20 @@ class LinkedList
 
 public:
 	Node* first;
+	Node* second;
+	Node* third;
 	LinkedList()
 	{
 		first = NULL;
+		second = NULL;
+		third = NULL;
 	}
 
 	LinkedList(int A[], int n);
 	~LinkedList();
+	void Create(int A[], int n);
 	void Display();
+	void Display(Node* p);
 	void RecursiveDisplay(Node *t);
 	int Count();
 	int RecursiveCount(Node* t);
@@ -41,6 +47,8 @@ public:
 	void ReverseUsingArray();
 	void ReverseUsingSlidingPointers();
 	void RecursiveReverse(Node* q, Node* p);
+	void Concat(Node* p, Node* q);
+	void Merge(Node* p, Node* q);
 };
 
 LinkedList::LinkedList(int A[], int n)
@@ -49,9 +57,32 @@ LinkedList::LinkedList(int A[], int n)
 	Node* last, * t;
 
 	first = new Node;
+	second = NULL;
+	third = NULL;
+
 	first->data = A[0];
 	first->next = NULL;
 	last = first;
+
+	for (i = 1; i < n; i++)
+	{
+		t = new Node;
+		t->data = A[i];
+		t->next = NULL;
+		last->next = t;
+		last = t;
+	}
+}
+
+void LinkedList::Create(int A[], int n)
+{
+	int i;
+	Node* last, * t;
+
+	second = new Node;
+	second->data = A[0];
+	second->next = NULL;
+	last = second;
 
 	for (i = 1; i < n; i++)
 	{
@@ -78,7 +109,16 @@ LinkedList::~LinkedList()
 void LinkedList::Display()
 {
 	Node* p = first;
+	while (p)
+	{
+		cout << p->data << " ";
+		p = p->next;
+	}
+	cout << endl;
+}
 
+void LinkedList::Display(Node *p)
+{
 	while (p)
 	{
 		cout << p->data << " ";
@@ -441,12 +481,74 @@ void LinkedList::RecursiveReverse(Node* q, Node* p)
 	}
 }
 
+void LinkedList::Concat(Node* p, Node* q)
+{
+	third = first;
+	while (p->next != NULL)
+	{		
+		p = p->next;
+	}
+
+	p->next = second;
+	second = NULL;
+}
+
+void LinkedList::Merge(Node* p, Node* q)
+{
+	Node* last;
+	if (p->data < q->data)
+	{
+		third = last = p;
+		p = p->next;
+		last->next = NULL;
+	}
+	else
+	{
+		third = last = q;
+		q = q->next;
+		last->next = NULL;
+	}
+
+	while (p && q)
+	{
+		if (p->data < q->data)
+		{
+			last->next = p;
+			last = p;
+			p = p->next;
+			last->next = NULL;
+		}
+		else
+		{
+			last->next = q;
+			last = q;
+			q = q->next;
+			last->next = NULL;
+		}
+
+		if (p)
+		{
+			last->next = p;
+		}
+		else
+		{
+			last->next = q;
+		}
+	}
+
+}
+
 int main()
 {
 	//int A[]{ 3,5,7,10,15,9 };
 	int A[]{ 10,20,30,40,50 };
+	int B[]{ 1,2,3,4,5 };
 	
 	LinkedList list(A,5);
+	//list.Display(list.first);
+	list.Create(B, 5);
+	//list.Display(list.second);
+
 	//list.Display();
 	//list.RecursiveDisplay(list.first);
 	//cout << list.Count();
@@ -503,7 +605,10 @@ int main()
 
 	//list.ReverseUsingArray();
 	//list.ReverseUsingSlidingPointers();
-	list.RecursiveReverse(NULL, list.first);
-	list.Display();
-	
+	//list.RecursiveReverse(NULL, list.first);
+	//list.Display();
+
+	//list.Concat(list.first, list.second);
+	list.Merge(list.first, list.second);
+	list.Display(list.third);
 }
