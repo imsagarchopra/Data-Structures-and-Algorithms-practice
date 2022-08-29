@@ -49,6 +49,7 @@ public:
 	void RecursiveReverse(Node* q, Node* p);
 	void Concat(Node* p, Node* q);
 	void Merge(Node* p, Node* q);
+	int IsLoop();
 };
 
 LinkedList::LinkedList(int A[], int n)
@@ -538,6 +539,27 @@ void LinkedList::Merge(Node* p, Node* q)
 
 }
 
+
+int LinkedList::IsLoop()
+{
+	Node* p;
+	Node* q;
+	
+	p = q = first;
+
+	do
+	{
+		p = p->next;
+		q = q->next;
+		q = q != NULL ? q->next : q;
+	} while (p && q && p!=q);
+
+	if (p == q)
+		return 1;
+	else
+		return 0;
+}
+
 int main()
 {
 	//int A[]{ 3,5,7,10,15,9 };
@@ -609,6 +631,21 @@ int main()
 	//list.Display();
 
 	//list.Concat(list.first, list.second);
-	list.Merge(list.first, list.second);
-	list.Display(list.third);
+	//list.Merge(list.first, list.second);
+	//list.Display(list.third);
+
+	Node* t1, * t2;
+
+	t1 = list.first->next->next;
+	t2 = list.first->next->next->next->next;
+	t2->next = t1;
+
+	if (list.IsLoop())
+	{
+		cout << "Has Loop"<<endl;
+	}
+	else
+	{
+		cout << "No Loop"<<endl;
+	}
 }
