@@ -38,6 +38,9 @@ public:
 	int Delete(int index);
 	int IsSorted();
 	void RemoveDuplicate();
+	void ReverseUsingArray();
+	void ReverseUsingSlidingPointers();
+	void RecursiveReverse(Node* q, Node* p);
 };
 
 LinkedList::LinkedList(int A[], int n)
@@ -384,12 +387,66 @@ void LinkedList::RemoveDuplicate()
 	}
 }
 
+void LinkedList::ReverseUsingArray()
+{
+	Node* q = first;
+	int* A, i = 0;
+
+	A = new int[Count()];
+
+	while (q != NULL)
+	{
+		A[i] = q->data;
+		q = q->next;
+		i++;
+	}
+
+	q = first;
+	i--;
+
+	while (q != NULL)
+	{
+		q->data = A[i];
+		q = q->next;
+		i--;
+	}
+}
+
+void LinkedList::ReverseUsingSlidingPointers()
+{
+	Node* p = first;
+	Node* q = NULL;
+	Node* r = NULL;
+	
+	while (p != NULL)
+	{
+		r = q;
+		q = p;
+		p = p->next;
+		q->next = r;
+	}
+	first = q;
+}
+
+void LinkedList::RecursiveReverse(Node* q, Node* p)
+{	
+	if (p != NULL)
+	{
+		RecursiveReverse(p, p->next);
+		p->next = q;
+	}
+	else
+	{
+		first = q;
+	}
+}
+
 int main()
 {
 	//int A[]{ 3,5,7,10,15,9 };
-	int A[]{ 10,20,20,30,30,30,40,50 };
+	int A[]{ 10,20,30,40,50 };
 	
-	LinkedList list(A,8);
+	LinkedList list(A,5);
 	//list.Display();
 	//list.RecursiveDisplay(list.first);
 	//cout << list.Count();
@@ -441,7 +498,12 @@ int main()
 		cout << "Not Sorted";
 	}*/
 
-	list.RemoveDuplicate();
+	//list.RemoveDuplicate();
+	//list.Display();
+
+	//list.ReverseUsingArray();
+	//list.ReverseUsingSlidingPointers();
+	list.RecursiveReverse(NULL, list.first);
 	list.Display();
 	
 }
