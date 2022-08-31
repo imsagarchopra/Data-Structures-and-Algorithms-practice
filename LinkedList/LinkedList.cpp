@@ -560,92 +560,92 @@ int LinkedList::IsLoop()
 		return 0;
 }
 
-int main()
-{
-	//int A[]{ 3,5,7,10,15,9 };
-	int A[]{ 10,20,30,40,50 };
-	int B[]{ 1,2,3,4,5 };
-	
-	LinkedList list(A,5);
-	//list.Display(list.first);
-	list.Create(B, 5);
-	//list.Display(list.second);
-
-	//list.Display();
-	//list.RecursiveDisplay(list.first);
-	//cout << list.Count();
-	//cout << list.RecursiveCount(list.first);
-	//cout << list.Add();
-	//cout << list.RecursiveAdd(list.first);
-	//cout << list.Max();
-	//cout << list.RecursiveMax(list.first);
-
-	/*if (list.Search(7))
-	{
-		cout << "Key Found";
-	}
-	else
-	{
-		cout << "Key Not Found";
-	}*/
-
-	//if (list.RecursiveSearch(list.first,7))
-	//{
-	//	cout << "Key Found";
-	//}
-	//else
-	//{
-	//	cout << "Key Not Found";
-	//}
-
-	/*if (list.Search_MoveToHead(7))
-	{
-		cout << "Key Found"<<endl;
-	}
-	else
-	{
-		cout << "Key Not Found"<<endl;
-	}*/
-
-	//list.Insert(0, 4);
-	//list.InsertLast(10);
-
-	//list.SortedInsert(9);
-	//list.Delete(3);
-
-	/*if (list.IsSorted())
-	{
-		cout << "Sorted";
-	}
-	else
-	{
-		cout << "Not Sorted";
-	}*/
-
-	//list.RemoveDuplicate();
-	//list.Display();
-
-	//list.ReverseUsingArray();
-	//list.ReverseUsingSlidingPointers();
-	//list.RecursiveReverse(NULL, list.first);
-	//list.Display();
-
-	//list.Concat(list.first, list.second);
-	//list.Merge(list.first, list.second);
-	//list.Display(list.third);
-
-	Node* t1, * t2;
-
-	t1 = list.first->next->next;
-	t2 = list.first->next->next->next->next;
-	t2->next = t1;
-
-	if (list.IsLoop())
-	{
-		cout << "Has Loop"<<endl;
-	}
-	else
-	{
-		cout << "No Loop"<<endl;
-	}
-}
+//int main()
+//{
+//	//int A[]{ 3,5,7,10,15,9 };
+//	int A[]{ 10,20,30,40,50 };
+//	int B[]{ 1,2,3,4,5 };
+//	
+//	LinkedList list(A,5);
+//	//list.Display(list.first);
+//	list.Create(B, 5);
+//	//list.Display(list.second);
+//
+//	//list.Display();
+//	//list.RecursiveDisplay(list.first);
+//	//cout << list.Count();
+//	//cout << list.RecursiveCount(list.first);
+//	//cout << list.Add();
+//	//cout << list.RecursiveAdd(list.first);
+//	//cout << list.Max();
+//	//cout << list.RecursiveMax(list.first);
+//
+//	/*if (list.Search(7))
+//	{
+//		cout << "Key Found";
+//	}
+//	else
+//	{
+//		cout << "Key Not Found";
+//	}*/
+//
+//	//if (list.RecursiveSearch(list.first,7))
+//	//{
+//	//	cout << "Key Found";
+//	//}
+//	//else
+//	//{
+//	//	cout << "Key Not Found";
+//	//}
+//
+//	/*if (list.Search_MoveToHead(7))
+//	{
+//		cout << "Key Found"<<endl;
+//	}
+//	else
+//	{
+//		cout << "Key Not Found"<<endl;
+//	}*/
+//
+//	//list.Insert(0, 4);
+//	//list.InsertLast(10);
+//
+//	//list.SortedInsert(9);
+//	//list.Delete(3);
+//
+//	/*if (list.IsSorted())
+//	{
+//		cout << "Sorted";
+//	}
+//	else
+//	{
+//		cout << "Not Sorted";
+//	}*/
+//
+//	//list.RemoveDuplicate();
+//	//list.Display();
+//
+//	//list.ReverseUsingArray();
+//	//list.ReverseUsingSlidingPointers();
+//	//list.RecursiveReverse(NULL, list.first);
+//	//list.Display();
+//
+//	//list.Concat(list.first, list.second);
+//	//list.Merge(list.first, list.second);
+//	//list.Display(list.third);
+//
+//	Node* t1, * t2;
+//
+//	t1 = list.first->next->next;
+//	t2 = list.first->next->next->next->next;
+//	t2->next = t1;
+//
+//	if (list.IsLoop())
+//	{
+//		cout << "Has Loop"<<endl;
+//	}
+//	else
+//	{
+//		cout << "No Loop"<<endl;
+//	}
+//}
