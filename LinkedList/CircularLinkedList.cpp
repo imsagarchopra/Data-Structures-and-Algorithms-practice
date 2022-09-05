@@ -202,17 +202,17 @@ int CircularLinkedList::Delete(int index)
 	return x;
 }
 
-int main()
-{
-	int A[]{ 3,5,7,10,15};
-	CircularLinkedList list(A, 5);
-
-	//list.Display();
-	//list.Display(list.head);
-	//list.RecursiveDisplay(list.head);
-	//cout<< list.Count();
-
-	//list.Insert(2, 4);
-	list.Delete(1);
-	list.Display();
-}
+//int main()
+//{
+//	int A[]{ 3,5,7,10,15};
+//	CircularLinkedList list(A, 5);
+//
+//	//list.Display();
+//	//list.Display(list.head);
+//	//list.RecursiveDisplay(list.head);
+//	//cout<< list.Count();
+//
+//	//list.Insert(2, 4);
+//	list.Delete(1);
+//	list.Display();
+//}
