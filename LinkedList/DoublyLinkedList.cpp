@@ -158,23 +158,23 @@ DoublyLinkedList::~DoublyLinkedList() {
 }
 
 
-int main() {
-
-	int A[]{ 1, 3, 5, 7, 9 };
-
-	DoublyLinkedList dll(A, sizeof(A) / sizeof(A[0]));
-	cout << "Length: " << dll.Length() << endl;
-
-	dll.Insert(0, 11);
-	dll.Insert(6, 13);
-	dll.Display();
-
-	dll.Delete(1);
-	dll.Delete(6);
-	dll.Display();
-
-	dll.Reverse();
-	dll.Display();
-
-	return 0;
-}
+//int main() {
+//
+//	int A[]{ 1, 3, 5, 7, 9 };
+//
+//	DoublyLinkedList dll(A, sizeof(A) / sizeof(A[0]));
+//	cout << "Length: " << dll.Length() << endl;
+//
+//	dll.Insert(0, 11);
+//	dll.Insert(6, 13);
+//	dll.Display();
+//
+//	dll.Delete(1);
+//	dll.Delete(6);
+//	dll.Display();
+//
+//	dll.Reverse();
+//	dll.Display();
+//
+//	return 0;
+//}
