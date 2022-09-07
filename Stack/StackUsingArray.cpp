@@ -109,24 +109,24 @@ void Stack::Display()
 	
 }
 
-int main()
-{
-	int A[] = { 1, 3, 5, 7, 9 };
-
-	Stack stk(sizeof(A) / sizeof(A[0]));
-
-	for (int i = 0; i < sizeof(A) / sizeof(A[0]); i++)
-	{
-		stk.Push(A[i]);
-	}
-	stk.Push(11);
-	stk.Display();
-
-	stk.Pop();
-	stk.Display();
-
-	cout << stk.Peek(2) << endl;
-
-	cout << stk.StackTop() << endl;
-
-}
+//int main()
+//{
+//	int A[] = { 1, 3, 5, 7, 9 };
+//
+//	Stack stk(sizeof(A) / sizeof(A[0]));
+//
+//	for (int i = 0; i < sizeof(A) / sizeof(A[0]); i++)
+//	{
+//		stk.Push(A[i]);
+//	}
+//	stk.Push(11);
+//	stk.Display();
+//
+//	stk.Pop();
+//	stk.Display();
+//
+//	cout << stk.Peek(2) << endl;
+//
+//	cout << stk.StackTop() << endl;
+//
+//}
