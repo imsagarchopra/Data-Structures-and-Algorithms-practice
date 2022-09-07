@@ -73,16 +73,16 @@ void middleNode3(Node* p) {
 	cout << "Middle Element (Method-III): " << s.top()->data << endl;
 }
 
-
-int main() {
-
-	int A[] = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21 };
-	create(A, sizeof(A) / sizeof(A[0]));
-
-	cout << endl;
-	middleNode1(head);
-	middleNode2(head);
-	middleNode3(head);
-
-	return 0;
-}
+//
+//int main() {
+//
+//	int A[] = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21 };
+//	create(A, sizeof(A) / sizeof(A[0]));
+//
+//	cout << endl;
+//	middleNode1(head);
+//	middleNode2(head);
+//	middleNode3(head);
+//
+//	return 0;
+//}

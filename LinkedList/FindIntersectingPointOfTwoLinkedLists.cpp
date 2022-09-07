@@ -73,27 +73,27 @@ void Intersection(Node* p, Node* q) {
 }
 
 
-int main() {
-
-	// Create First Linked List
-	int A[] = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21 };
-	create(A, sizeof(A) / sizeof(A[0]));
-
-	// Create Second Linked List
-	Node* temp = head;
-	int i = 5;
-	while (i > 0) {
-		temp = temp->next;
-		i--;
-	}
-	cout << temp->data << endl;
-
-	int B[] = { 2, 4, 6, 8, 10 };
-	createSecond(B, sizeof(B) / sizeof(B[0]), temp);
-
-	// Find Intersection
-	Intersection(head, second);
-
-
-	return 0;
-}
+//int main() {
+//
+//	// Create First Linked List
+//	int A[] = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21 };
+//	create(A, sizeof(A) / sizeof(A[0]));
+//
+//	// Create Second Linked List
+//	Node* temp = head;
+//	int i = 5;
+//	while (i > 0) {
+//		temp = temp->next;
+//		i--;
+//	}
+//	cout << temp->data << endl;
+//
+//	int B[] = { 2, 4, 6, 8, 10 };
+//	createSecond(B, sizeof(B) / sizeof(B[0]), temp);
+//
+//	// Find Intersection
+//	Intersection(head, second);
+//
+//
+//	return 0;
+//}
