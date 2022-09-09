@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ParenthesisMatching.cpp" />
     <ClCompile Include="StackUsingArray.cpp" />
     <ClCompile Include="StackUsingLinkedList.cpp" />
   </ItemGroup>
