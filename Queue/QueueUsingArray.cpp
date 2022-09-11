@@ -110,25 +110,25 @@ void QueueUsingArray::Display()
 
 }
 
-int main()
-{
-	int A[] = { 1, 3, 5, 7, 9 };
-
-	QueueUsingArray q(sizeof(A) / sizeof(A[0]));
-
-	for (int i = 0; i < sizeof(A) / sizeof(A[0]); i++)
-	{
-		q.Enqueue(A[i]);
-	}
-	q.Display();
-	q.Enqueue(11);
-	q.Display();
-
-	q.Dequeue();
-	q.Display();
-
-	cout << q.First() << endl;
-
-	cout << q.Last() << endl;
-
-}
+//int main()
+//{
+//	int A[] = { 1, 3, 5, 7, 9 };
+//
+//	QueueUsingArray q(sizeof(A) / sizeof(A[0]));
+//
+//	for (int i = 0; i < sizeof(A) / sizeof(A[0]); i++)
+//	{
+//		q.Enqueue(A[i]);
+//	}
+//	q.Display();
+//	q.Enqueue(11);
+//	q.Display();
+//
+//	q.Dequeue();
+//	q.Display();
+//
+//	cout << q.First() << endl;
+//
+//	cout << q.Last() << endl;
+//
+//}
