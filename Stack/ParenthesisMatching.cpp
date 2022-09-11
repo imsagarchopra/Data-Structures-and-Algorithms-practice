@@ -197,34 +197,34 @@ int isBalanced3(char* exp) {
 }
 
 
-int main() {
-
-	/*char E[] = "((a+b)*(c-d))";
-	cout << isBalanced1(E) << endl;
-
-	char F[] = "((a+b)*(c-d)))";
-	cout << isBalanced1(F) << endl;
-
-	char G[] = "(((a+b)*(c-d))";
-	cout << isBalanced1(G) << endl;*/
-	
-
-	/*char A[] = "{([a+b]*[c-d])/e}";
-	cout << isBalanced2(A) << endl;
-	
-	char B[] = "{([a+b]}*[c-d])/e}";
-	cout << isBalanced2(B) << endl;
-
-	char C[] = "{([{a+b]*[c-d])/e}";
-	cout << isBalanced2(C) << endl;*/
-
-	char A[] = "{([a+b]*[c-d])/e}";
-	cout << isBalanced3(A) << endl;
-
-	char B[] = "{([a+b]}*[c-d])/e}";
-	cout << isBalanced3(B) << endl;
-
-	char C[] = "{([{a+b]*[c-d])/e}";
-	cout << isBalanced3(C) << endl;
-
-}
+//int main() {
+//
+//	/*char E[] = "((a+b)*(c-d))";
+//	cout << isBalanced1(E) << endl;
+//
+//	char F[] = "((a+b)*(c-d)))";
+//	cout << isBalanced1(F) << endl;
+//
+//	char G[] = "(((a+b)*(c-d))";
+//	cout << isBalanced1(G) << endl;*/
+//	
+//
+//	/*char A[] = "{([a+b]*[c-d])/e}";
+//	cout << isBalanced2(A) << endl;
+//	
+//	char B[] = "{([a+b]}*[c-d])/e}";
+//	cout << isBalanced2(B) << endl;
+//
+//	char C[] = "{([{a+b]*[c-d])/e}";
+//	cout << isBalanced2(C) << endl;*/
+//
+//	char A[] = "{([a+b]*[c-d])/e}";
+//	cout << isBalanced3(A) << endl;
+//
+//	char B[] = "{([a+b]}*[c-d])/e}";
+//	cout << isBalanced3(B) << endl;
+//
+//	char C[] = "{([{a+b]*[c-d])/e}";
+//	cout << isBalanced3(C) << endl;
+//
+//}
