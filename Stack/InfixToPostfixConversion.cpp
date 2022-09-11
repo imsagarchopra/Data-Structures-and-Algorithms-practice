@@ -253,55 +253,55 @@ int inPrecedence(char x) {
 	return -1;
 }
 
-char* convert(char* infix) {
-	char* postfix = new char[strlen(infix) + 1];
+//char* InToPost3(char* infix) {
+//	char* postfix = new char[strlen(infix) + 1];
+//
+//	Stack2 stk;
+//
+//	int i = 0;
+//	int j = 0;
+//
+//	while (infix[i] != '\0') {
+//		if (isOperand1(infix[i])) {
+//			postfix[j++] = infix[i++];
+//		}
+//		else {
+//			if (IsEmpty() || outPrecedence(infix[i]) > inPrecedence(top())) {
+//				stk.push(infix[i++]);
+//			}
+//			else if (outPrecedence(infix[i]) == inPrecedence(stk.top())) {
+//				stk.pop();
+//			}
+//			else {
+//				postfix[j++] = stk.top();
+//				stk.pop();
+//			}
+//		}
+//	}
+//
+//	while (!stk.empty() && stk.top() != ')') {
+//		postfix[j++] = stk.top();
+//		stk.pop();
+//	}
+//
+//	postfix[j] = '\0';
+//
+//	return postfix;
+//
+//}
 
-	Stack2 stk;
-
-	int i = 0;
-	int j = 0;
-
-	while (infix[i] != '\0') {
-		if (isOperand1(infix[i])) {
-			postfix[j++] = infix[i++];
-		}
-		else {
-			if (IsEmpty() || outPrecedence(infix[i]) > inPrecedence(top())) {
-				stk.push(infix[i++]);
-			}
-			else if (outPrecedence(infix[i]) == inPrecedence(stk.top())) {
-				stk.pop();
-			}
-			else {
-				postfix[j++] = stk.top();
-				stk.pop();
-			}
-		}
-	}
-
-	while (!stk.empty() && stk.top() != ')') {
-		postfix[j++] = stk.top();
-		stk.pop();
-	}
-
-	postfix[j] = '\0';
-
-	return postfix;
-
-}
-
-int main()
-{
-	char infix[] = "a+b*c-d/e";
-	Push('#');
-
-	char* postfix = InToPost(infix);
-	cout << postfix << endl;
-
-	postfix = InToPost2(infix);
-
-	cout << postfix << endl;
-
-
-	return 0;
-}
+//int main()
+//{
+//	char infix[] = "a+b*c-d/e";
+//	Push('#');
+//
+//	char* postfix = InToPost(infix);
+//	cout << postfix << endl;
+//
+//	postfix = InToPost2(infix);
+//
+//	cout << postfix << endl;
+//
+//
+//	return 0;
+//}
