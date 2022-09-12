@@ -112,26 +112,26 @@ void CircularQueue::Display()
 	cout << endl;
 }
 
-int main()
-{
-	int A[] = { 1, 3, 5, 7, 9 };
-
-	CircularQueue q(sizeof(A) / sizeof(A[0]));
-
-	for (int i = 0; i < sizeof(A) / sizeof(A[0]); i++)
-	{
-		q.Enqueue(A[i]);
-	}
-	q.Display();
-	q.Enqueue(11);
-	q.Display();
-
-	q.Dequeue();
-	q.Enqueue(11);
-	q.Display();
-
-	cout << q.First() << endl;
-
-	cout << q.Last() << endl;
-
-}
+//int main()
+//{
+//	int A[] = { 1, 3, 5, 7, 9 };
+//
+//	CircularQueue q(sizeof(A) / sizeof(A[0]));
+//
+//	for (int i = 0; i < sizeof(A) / sizeof(A[0]); i++)
+//	{
+//		q.Enqueue(A[i]);
+//	}
+//	q.Display();
+//	q.Enqueue(11);
+//	q.Display();
+//
+//	q.Dequeue();
+//	q.Enqueue(11);
+//	q.Display();
+//
+//	cout << q.First() << endl;
+//
+//	cout << q.Last() << endl;
+//
+//}
