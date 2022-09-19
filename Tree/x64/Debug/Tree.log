@@ -1,13 +1,4 @@
-﻿  IterativeTraversals.cpp
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\IterativeTraversals.cpp(129,24): warning C4311: 'type cast': pointer truncation from 'TreeNode *' to 'long'
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\IterativeTraversals.cpp(129,24): warning C4302: 'type cast': truncation from 'TreeNode *' to 'long'
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\IterativeTraversals.cpp(129,24): error C2664: 'void Stack::Push(TreeNode *)': cannot convert argument 1 from 'long' to 'TreeNode *'
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\IterativeTraversals.cpp(129,23): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or parenthesized function-style cast
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\Stack.h(65,13): message : see declaration of 'Stack::Push'
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\IterativeTraversals.cpp(134,20): error C2440: '=': cannot convert from 'TreeNode *' to 'long'
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\IterativeTraversals.cpp(134,18): message : There is no context in which this conversion is possible
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\IterativeTraversals.cpp(137,19): error C2664: 'void Stack::Push(TreeNode *)': cannot convert argument 1 from 'long' to 'TreeNode *'
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\IterativeTraversals.cpp(137,14): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or parenthesized function-style cast
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\Stack.h(65,13): message : see declaration of 'Stack::Push'
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\IterativeTraversals.cpp(138,25): warning C4312: 'type cast': conversion from 'long' to 'TreeNode *' of greater size
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\IterativeTraversals.cpp(142,41): warning C4312: 'type cast': conversion from 'long' to 'TreeNode *' of greater size
+﻿  BinarySearchTree.cpp
+C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\BinarySearchTree.cpp(254,33): warning C4804: '<': unsafe use of type 'bool' in operation
+C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\BinarySearchTree.cpp(104): warning C4715: 'BST::RecursiveInsert': not all control paths return a value
+  Tree.vcxproj -> C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\x64\Debug\Tree.exe

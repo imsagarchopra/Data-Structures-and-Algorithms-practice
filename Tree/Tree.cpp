@@ -208,26 +208,26 @@ int searchInorder(int inArray[], int inStart, int inEnd, int data) {
 	return -1;
 }
 
-TreeNode* Tree::generateFromTraversal(int* inorder, int* preorder, int inStart, int inEnd) {
-	// Reference: https://algorithms.tutorialhorizon.com/make-a-binary-tree-from-given-inorder-and-preorder-traveral/
-	static int preIndex = 0;
-
-	if (inStart > inEnd) {
-		return nullptr;
-	}
-
-	TreeNode* node = new TreeNode(preorder[preIndex++]);
-
-	if (inStart == inEnd) {
-		return node;
-	}
-
-	int splitIndex = searchInorder(inorder, inStart, inEnd, node->data);
-	node->lchild = generateFromTraversal(inorder, preorder, inStart, splitIndex - 1);
-	node->rchild = generateFromTraversal(inorder, preorder, splitIndex + 1, inEnd);
-
-	return node;
-}
+//TreeNode* Tree::generateFromTraversal(int* inorder, int* preorder, int inStart, int inEnd) {
+//	// Reference: https://algorithms.tutorialhorizon.com/make-a-binary-tree-from-given-inorder-and-preorder-traveral/
+//	static int preIndex = 0;
+//
+//	if (inStart > inEnd) {
+//		return nullptr;
+//	}
+//
+//	TreeNode* node = new TreeNode(preorder[preIndex++]);
+//
+//	if (inStart == inEnd) {
+//		return node;
+//	}
+//
+//	int splitIndex = searchInorder(inorder, inStart, inEnd, node->data);
+//	node->lchild = generateFromTraversal(inorder, preorder, inStart, splitIndex - 1);
+//	node->rchild = generateFromTraversal(inorder, preorder, splitIndex + 1, inEnd);
+//
+//	return node;
+//}
 
  
 
