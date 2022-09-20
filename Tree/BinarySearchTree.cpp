@@ -268,78 +268,78 @@ void BST::createFromPreorder(int* pre, int n) {
 }
 
 
-int main() {
-
-	BST bst;
-
-	// Iterative insert
-	bst.Insert(10);
-	bst.Insert(5);
-	bst.Insert(20);
-	bst.Insert(8);
-	bst.Insert(30);
-
-	// Inorder traversal
-	bst.Inorder(bst.getRoot());
-	cout << endl;
-
-	// Iterative search
-	Node* temp = bst.Search(2);
-	if (temp != nullptr) {
-		cout << temp->data << endl;
-	}
-	else {
-		cout << "Element not found" << endl;
-	}
-
-	// Recursive search
-	temp = bst.RecursiveSearch(bst.getRoot(), 20);
-	if (temp != nullptr) {
-		cout << temp->data << endl;
-	}
-	else {
-		cout << "Element not found" << endl;
-	}
-
-	// Recursive insert
-	bst.RecursiveInsert(bst.getRoot(), 50);
-	bst.RecursiveInsert(bst.getRoot(), 70);
-	bst.RecursiveInsert(bst.getRoot(), 1);
-	bst.Inorder(bst.getRoot());
-	cout << "\n" << endl;
-
-	// Inorder predecessor and inorder successor
-	BST bs;
-	bs.Insert(5);
-	bs.Insert(2);
-	bs.Insert(8);
-	bs.Insert(7);
-	bs.Insert(9);
-	bs.Insert(1);
-
-	temp = bs.InPre(bs.getRoot());
-	cout << "InPre: " << temp->data << endl;
-
-	temp = bs.InSucc(bs.getRoot());
-	cout << "InSucc: " << temp->data << endl;
-
-	bs.Inorder(bs.getRoot());
-	cout << endl;
-
-	// Delete
-	bs.Delete(bs.getRoot(), 5);
-	bs.Inorder(bs.getRoot());
-	cout << endl;
-
-	// BST from Preorder traversal
-	cout << "BST from Preorder: " << flush;
-	int pre[] = { 30, 20, 10, 15, 25, 40, 50, 45 };
-	int n = sizeof(pre) / sizeof(pre[0]);
-
-	BST b;
-	b.createFromPreorder(pre, n);
-	b.Inorder(b.getRoot());
-	cout << endl;
-
-	return 0;
-}
+//int main() {
+//
+//	BST bst;
+//
+//	// Iterative insert
+//	bst.Insert(10);
+//	bst.Insert(5);
+//	bst.Insert(20);
+//	bst.Insert(8);
+//	bst.Insert(30);
+//
+//	// Inorder traversal
+//	bst.Inorder(bst.getRoot());
+//	cout << endl;
+//
+//	// Iterative search
+//	Node* temp = bst.Search(2);
+//	if (temp != nullptr) {
+//		cout << temp->data << endl;
+//	}
+//	else {
+//		cout << "Element not found" << endl;
+//	}
+//
+//	// Recursive search
+//	temp = bst.RecursiveSearch(bst.getRoot(), 20);
+//	if (temp != nullptr) {
+//		cout << temp->data << endl;
+//	}
+//	else {
+//		cout << "Element not found" << endl;
+//	}
+//
+//	// Recursive insert
+//	bst.RecursiveInsert(bst.getRoot(), 50);
+//	bst.RecursiveInsert(bst.getRoot(), 70);
+//	bst.RecursiveInsert(bst.getRoot(), 1);
+//	bst.Inorder(bst.getRoot());
+//	cout << "\n" << endl;
+//
+//	// Inorder predecessor and inorder successor
+//	BST bs;
+//	bs.Insert(5);
+//	bs.Insert(2);
+//	bs.Insert(8);
+//	bs.Insert(7);
+//	bs.Insert(9);
+//	bs.Insert(1);
+//
+//	temp = bs.InPre(bs.getRoot());
+//	cout << "InPre: " << temp->data << endl;
+//
+//	temp = bs.InSucc(bs.getRoot());
+//	cout << "InSucc: " << temp->data << endl;
+//
+//	bs.Inorder(bs.getRoot());
+//	cout << endl;
+//
+//	// Delete
+//	bs.Delete(bs.getRoot(), 5);
+//	bs.Inorder(bs.getRoot());
+//	cout << endl;
+//
+//	// BST from Preorder traversal
+//	cout << "BST from Preorder: " << flush;
+//	int pre[] = { 30, 20, 10, 15, 25, 40, 50, 45 };
+//	int n = sizeof(pre) / sizeof(pre[0]);
+//
+//	BST b;
+//	b.createFromPreorder(pre, n);
+//	b.Inorder(b.getRoot());
+//	cout << endl;
+//
+//	return 0;
+//}

@@ -1,4 +1,2 @@
-﻿  BinarySearchTree.cpp
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\BinarySearchTree.cpp(254,33): warning C4804: '<': unsafe use of type 'bool' in operation
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Tree\BinarySearchTree.cpp(104): warning C4715: 'BST::RecursiveInsert': not all control paths return a value
+﻿  AVLTree.cpp
   Tree.vcxproj -> C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\x64\Debug\Tree.exe
