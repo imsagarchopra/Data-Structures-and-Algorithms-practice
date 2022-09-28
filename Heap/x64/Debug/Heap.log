@@ -1,7 +1,2 @@
-﻿  Heap.cpp
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Heap\Heap.cpp(79,19): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Heap\Heap.cpp(83,19): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Heap\Heap.cpp(91,30): warning C4305: 'argument': truncation from 'int' to 'char'
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Heap\Heap.cpp(91,25): warning C4309: 'argument': truncation of constant value
-C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\Heap\Heap.cpp(91,30): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+﻿  HeapSort.cpp
   Heap.vcxproj -> C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\x64\Debug\Heap.exe
