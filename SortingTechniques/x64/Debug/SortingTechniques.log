@@ -1,0 +1,5 @@
+﻿  SortingTechniques.cpp
+C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\SortingTechniques\SortingTechniques.cpp(16,9): warning C4101: 'j': unreferenced local variable
+C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\SortingTechniques\SortingTechniques.cpp(16,6): warning C4101: 'i': unreferenced local variable
+C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\SortingTechniques\SortingTechniques.cpp(46,48): warning C4101: 'i': unreferenced local variable
+  SortingTechniques.vcxproj -> C:\Users\Sagar Chopra\source\repos\Data Structures and Algorithms practice\x64\Debug\SortingTechniques.exe

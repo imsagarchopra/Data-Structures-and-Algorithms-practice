@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tree", "Tree\Tree.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Heap", "Heap\Heap.vcxproj", "{6348C7C2-B360-4C5F-B129-964E1FF97134}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortingTechniques", "SortingTechniques\SortingTechniques.vcxproj", "{47545BE5-9EF5-4913-8BD8-91257889D64D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{6348C7C2-B360-4C5F-B129-964E1FF97134}.Release|x64.Build.0 = Release|x64
 		{6348C7C2-B360-4C5F-B129-964E1FF97134}.Release|x86.ActiveCfg = Release|Win32
 		{6348C7C2-B360-4C5F-B129-964E1FF97134}.Release|x86.Build.0 = Release|Win32
+		{47545BE5-9EF5-4913-8BD8-91257889D64D}.Debug|x64.ActiveCfg = Debug|x64
+		{47545BE5-9EF5-4913-8BD8-91257889D64D}.Debug|x64.Build.0 = Debug|x64
+		{47545BE5-9EF5-4913-8BD8-91257889D64D}.Debug|x86.ActiveCfg = Debug|Win32
+		{47545BE5-9EF5-4913-8BD8-91257889D64D}.Debug|x86.Build.0 = Debug|Win32
+		{47545BE5-9EF5-4913-8BD8-91257889D64D}.Release|x64.ActiveCfg = Release|x64
+		{47545BE5-9EF5-4913-8BD8-91257889D64D}.Release|x64.Build.0 = Release|x64
+		{47545BE5-9EF5-4913-8BD8-91257889D64D}.Release|x86.ActiveCfg = Release|Win32
+		{47545BE5-9EF5-4913-8BD8-91257889D64D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
