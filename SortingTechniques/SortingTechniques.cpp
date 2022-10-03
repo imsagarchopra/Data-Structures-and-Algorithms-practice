@@ -50,6 +50,23 @@ void InsertionSort(int A[], int n)
 	}
 }
 
+void SelectionSort(int A[], int n)
+{
+	int i, j, k;
+
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (int j = k = i; j < n; j++)
+		{
+			if (A[j] < A[k])
+			{
+				k = j;
+			}
+		}
+		Swap(&A[i], &A[k]);
+	}
+}
+
 void Print(int A[], int n)
 {
 	for (int i = 0; i < n; i++)
@@ -64,7 +81,8 @@ int main()
 	int A[] = { 3,7,9,10,6,5,12,4,11,2 }, n = 10, i;
 
 	//BubbleSort(A, n);
-	InsertionSort(A, n);
+	//InsertionSort(A, n);
+	SelectionSort(A, n);
 	Print(A, n);
 	
 }
