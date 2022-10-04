@@ -67,6 +67,41 @@ void SelectionSort(int A[], int n)
 	}
 }
 
+int Partition(int A[], int l, int h)
+{
+	int pivot, i, j;
+	pivot = A[l];
+	i = l;
+	j = h;
+
+	do
+	{
+		do { i++; } while (A[i] <= pivot);
+		do { j--; } while (A[j] > pivot);
+
+		if (i < j)
+		{
+			Swap(&A[i], &A[j]);
+		}
+
+	} while (i < j);
+
+	Swap(&A[l], &A[j]);
+	return j;
+}
+
+void QuickSort(int A[], int l, int h)
+{
+	int j;	
+
+	if (l < h)
+	{
+		j = Partition(A, l, h);
+		QuickSort(A, l, j);
+		QuickSort(A, j + 1, h);
+	}
+}
+
 void Print(int A[], int n)
 {
 	for (int i = 0; i < n; i++)
@@ -78,12 +113,15 @@ void Print(int A[], int n)
 
 int main()
 {
-	int A[] = { 3,7,9,10,6,5,12,4,11,2 }, n = 10, i;
+	int A[] = { 3,7,9,10,6,5,12,4,11,2,INT32_MAX }, n = 11, i;
 
 	//BubbleSort(A, n);
 	//InsertionSort(A, n);
-	SelectionSort(A, n);
-	Print(A, n);
+	//SelectionSort(A, n);
+	//Print(A, n);
+
+	QuickSort(A, 0, n - 1);
+	Print(A, n-1);
 	
 }
 
