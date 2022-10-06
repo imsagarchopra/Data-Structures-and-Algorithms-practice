@@ -102,6 +102,86 @@ void QuickSort(int A[], int l, int h)
 	}
 }
 
+void Merge(int x[], int y[], int z[], int m, int n) 
+{
+	int i = 0;
+	int j = 0;
+	int k = 0;
+	while (i < m && j < n) {
+		if (x[i] < y[j]) {
+			z[k++] = x[i++];
+		}
+		else {
+			z[k++] = y[j++];
+		}
+	}
+	while (i < m) {
+		z[k++] = x[i++];
+	}
+	while (j < n) {
+		z[k++] = x[j++];
+	}
+}
+
+void MergeSingle(int A[], int low, int mid, int high) 
+{
+	int i = low;
+	int j = mid + 1;
+	int k = low;
+	int B[11]; //high + 1
+	while (i <= mid && j <= high) {
+		if (A[i] < A[j]) {
+			B[k++] = A[i++];
+		}
+		else {
+			B[k++] = A[j++];
+		}
+	}
+	while (i <= mid) {
+		B[k++] = A[i++];
+	}
+	while (j <= high) {
+		B[k++] = A[j++];
+	}
+	for (int i = low; i <= high; i++) {
+		A[i] = B[i];
+	}
+}
+
+void IterativeMergeSort(int A[], int n)
+{
+	int p;
+	for (p = 2; p <= n; p = p * 2)
+	{
+		for (int i = 0; i + p - 1 < n; i = i + p)
+		{
+			int low = i;
+			int high = i + p - 1;
+			int mid = (low + high) / 2;
+			MergeSingle(A, low, mid, high);
+		}
+	}
+
+	if (p / 2 < n)
+	{
+		MergeSingle(A, 0, p/2 - 1, n - 1);
+	}
+}
+
+void RecursiveMergeSort(int A[], int low, int high)
+{
+
+	if (low < high)
+	{
+		int mid = (low + high) / 2;
+
+		RecursiveMergeSort(A, low, mid);
+		RecursiveMergeSort(A, mid + 1, high);
+		MergeSingle(A, low, mid, high);
+	}
+
+}
+
 void Print(int A[], int n)
 {
 	for (int i = 0; i < n; i++)
@@ -120,8 +200,11 @@ int main()
 	//SelectionSort(A, n);
 	//Print(A, n);
 
-	QuickSort(A, 0, n - 1);
-	Print(A, n-1);
-	
+	//QuickSort(A, 0, n - 1);
+	//Print(A, n-1);
+
+	//IterativeMergeSort(A, n);
+	RecursiveMergeSort(A, 0, n - 1);
+	Print(A, n - 1);
 }
 
