@@ -182,6 +182,53 @@ void RecursiveMergeSort(int A[], int low, int high)
 
 }
 
+int FindMax(int A[], int n)
+{
+	int max = INT_MAX;
+
+	for (int i = 0; i < n; i++)
+	{
+		if (A[i] > max)
+		{
+			max = A[i];
+		}
+	}
+	return max;
+}
+
+void CountSort(int A[], int n) {
+	int max = FindMax(A, n);
+
+	// Create count array
+	int* count = new int[max+1];
+
+	// Initialize count array with 0
+	for (int i = 0; i < max + 1; i++) {
+		count[i] = 0;
+	}
+
+	// Update count array values based on A values
+	for (int i = 0; i < n; i++) {
+		count[A[i]]++;
+	}
+
+	// Update A with sorted elements
+	int i = 0;
+	int j = 0;
+	while (j < max + 1) {
+		if (count[j] > 0) {
+			A[i++] = j;
+			count[j]--;
+		}
+		else {
+			j++;
+		}
+	}
+
+	// Delete heap memory
+	delete[] count;
+}
+
 void Print(int A[], int n)
 {
 	for (int i = 0; i < n; i++)
@@ -204,7 +251,10 @@ int main()
 	//Print(A, n-1);
 
 	//IterativeMergeSort(A, n);
-	RecursiveMergeSort(A, 0, n - 1);
+	//RecursiveMergeSort(A, 0, n - 1);
+	//Print(A, n - 1);
+
+	CountSort(A, n);
 	Print(A, n - 1);
 }
 
