@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Hashing.cpp">
+    <ClCompile Include="Chaining.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearProbing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
