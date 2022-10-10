@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Chaining.cpp" />
+    <ClCompile Include="DoubleHashing.cpp" />
     <ClCompile Include="LinearProbing.cpp" />
     <ClCompile Include="QuadraticProbing.cpp" />
   </ItemGroup>
