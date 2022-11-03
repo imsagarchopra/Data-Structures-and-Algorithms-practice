@@ -21,5 +21,8 @@
     <ClCompile Include="PrimMST.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="KruskalMST.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

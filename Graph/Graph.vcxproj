@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="KruskalMST.cpp" />
     <ClCompile Include="PrimMST.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
